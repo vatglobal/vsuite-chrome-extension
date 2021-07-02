@@ -38,6 +38,10 @@ const structure = [
     link: 'https://vatglobal.atlassian.net/jira/your-work',
 },
 {
+    name: 'dev api docs',
+    link: 'https://admin-dev.myvsuite.com/docs/',
+},
+{
   name: 'Dev',
   type: Tree.FOLDER,
   children: [
