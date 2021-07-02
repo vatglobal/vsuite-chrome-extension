@@ -12,6 +12,24 @@ tree.on('select', e => {
 
 const structure = [
 {
+    name: 'Admin',
+    type: Tree.FOLDER,
+    children: [
+        {
+            name: 'admin-dev',
+            link: 'https://admin-dev.myvsuite.com/admin/',
+        },
+        {
+            name: 'admin-test',
+            link: 'https://admin-test.myvsuite.com/admin/',
+        },
+        {
+            name: 'admin-staging',
+            link: 'https://admin-staging.myvsuite.com/admin/',
+        },
+    ]
+},
+{
   name: 'Dev',
   type: Tree.FOLDER,
   children: [
