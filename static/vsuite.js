@@ -30,6 +30,14 @@ const structure = [
     ]
 },
 {
+    name: 'circle-ci',
+    link: 'https://app.circleci.com/pipelines/github/vatglobal/vsuite-frontend-new',
+},
+{
+    name: 'Jira',
+    link: 'https://vatglobal.atlassian.net/jira/your-work',
+},
+{
   name: 'Dev',
   type: Tree.FOLDER,
   children: [
@@ -40,38 +48,34 @@ const structure = [
   ]
 },
 {
-  name: 'Test'
+  name: 'Test',
+  type: Tree.FOLDER,
+  children: [
+      {
+          name: 'app-test',
+          link: 'https://app-test-new.myvsuite.com',
+      }
+  ]
 },
 {
   name: 'Staging',
-  open: false,
   type: Tree.FOLDER,
-  selected: true,
-  children: [{
-    name: 'file 1/1'
-  }, {
-    name: 'file 1/2'
-  }, {
-    name: 'folder 1/1',
-    type: Tree.FOLDER,
-    children: [{
-      name: 'folder 1/1/1',
-      type: Tree.FOLDER,
-      children: [{
-        name: 'folder 1/1/1/1',
-        type: Tree.FOLDER,
-        children: [{
-          name: 'file 1/1/1/1/1'
-        }, {
-          name: 'file 1/1/1/1/2'
-        }]
-      }]
-    }]
-  }]
-}, 
+  children: [
+      {
+          name: 'app-staging',
+          link: 'https://app-dev-staging.myvsuite.com',
+      }
+  ]
+},
 {
   name: 'Live',
   type: Tree.FOLDER,
+  children: [
+      {
+          name: 'app-live',
+          link: 'https://app.myvsuite.com',
+      }
+  ]
 }];
 
 // keep track of the original node objects
