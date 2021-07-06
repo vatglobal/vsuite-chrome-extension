@@ -12,6 +12,22 @@ tree.on('select', e => {
 
 const structure = [
 {
+    name: 'circle-ci',
+    link: 'https://app.circleci.com/pipelines/github/vatglobal/vsuite-frontend-new',
+},
+{
+    name: 'Jira',
+    link: 'https://vatglobal.atlassian.net/jira/your-work',
+},
+{
+    name: 'dev api docs',
+    link: 'https://admin-dev.myvsuite.com/docs/',
+},
+{
+    name: 'Sentry',
+    link: 'https://sentry.io/organizations/vatglobal/activity/',
+},
+{
     name: 'Admin',
     type: Tree.FOLDER,
     children: [
@@ -28,18 +44,6 @@ const structure = [
             link: 'https://admin-staging.myvsuite.com/admin/',
         },
     ]
-},
-{
-    name: 'circle-ci',
-    link: 'https://app.circleci.com/pipelines/github/vatglobal/vsuite-frontend-new',
-},
-{
-    name: 'Jira',
-    link: 'https://vatglobal.atlassian.net/jira/your-work',
-},
-{
-    name: 'dev api docs',
-    link: 'https://admin-dev.myvsuite.com/docs/',
 },
 {
   name: 'Dev',
